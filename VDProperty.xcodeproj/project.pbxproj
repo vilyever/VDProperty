@@ -15,6 +15,8 @@
 		FEF353941B7C40540070C6D5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEF353931B7C40540070C6D5 /* Images.xcassets */; };
 		FEF353971B7C40540070C6D5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEF353951B7C40540070C6D5 /* LaunchScreen.xib */; };
 		FEF353A31B7C40540070C6D5 /* VDPropertyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF353A21B7C40540070C6D5 /* VDPropertyTests.m */; };
+		FEF353B01B7C40690070C6D5 /* VDProperty.podspec in Resources */ = {isa = PBXBuildFile; fileRef = FEF353AC1B7C40690070C6D5 /* VDProperty.podspec */; };
+		FEF353B31B7C40960070C6D5 /* NSObject+VDProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF353B21B7C40960070C6D5 /* NSObject+VDProperty.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,9 @@
 		FEF3539C1B7C40540070C6D5 /* VDPropertyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VDPropertyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF353A11B7C40540070C6D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEF353A21B7C40540070C6D5 /* VDPropertyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VDPropertyTests.m; sourceTree = "<group>"; };
+		FEF353AC1B7C40690070C6D5 /* VDProperty.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VDProperty.podspec; sourceTree = "<group>"; };
+		FEF353B11B7C40960070C6D5 /* NSObject+VDProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+VDProperty.h"; sourceTree = "<group>"; };
+		FEF353B21B7C40960070C6D5 /* NSObject+VDProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+VDProperty.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +73,8 @@
 				FEF353821B7C40540070C6D5 /* VDProperty */,
 				FEF3539F1B7C40540070C6D5 /* VDPropertyTests */,
 				FEF353811B7C40540070C6D5 /* Products */,
+				FEF353AC1B7C40690070C6D5 /* VDProperty.podspec */,
+				FEF353AD1B7C40690070C6D5 /* Pod */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,6 +127,31 @@
 				FEF353A11B7C40540070C6D5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FEF353AD1B7C40690070C6D5 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				FEF353AE1B7C40690070C6D5 /* Assets */,
+				FEF353AF1B7C40690070C6D5 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		FEF353AE1B7C40690070C6D5 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		FEF353AF1B7C40690070C6D5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FEF353B11B7C40960070C6D5 /* NSObject+VDProperty.h */,
+				FEF353B21B7C40960070C6D5 /* NSObject+VDProperty.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEF353921B7C40540070C6D5 /* Main.storyboard in Resources */,
+				FEF353B01B7C40690070C6D5 /* VDProperty.podspec in Resources */,
 				FEF353971B7C40540070C6D5 /* LaunchScreen.xib in Resources */,
 				FEF353941B7C40540070C6D5 /* Images.xcassets in Resources */,
 			);
@@ -226,6 +259,7 @@
 				FEF353891B7C40540070C6D5 /* AppDelegate.m in Sources */,
 				FEF3538F1B7C40540070C6D5 /* ViewController.m in Sources */,
 				FEF353861B7C40540070C6D5 /* main.m in Sources */,
+				FEF353B31B7C40960070C6D5 /* NSObject+VDProperty.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +388,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VDProperty/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -364,6 +399,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VDProperty/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
